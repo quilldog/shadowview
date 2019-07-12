@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="shadowViewStyle" format="reference" />
+    <!--if we do not set the contentBackgroundColor ,the shadowViw will use this default contentBackgroundColor-->
+    <color name="shadowView_dark_background">#FF424242</color>
+    <color name="shadowView_light_background">#FFFFFFFF</color>
+    <!--if we do not set the start or end color ,the shadowViw will use this default color-->
+    <color name="shadowView_default_shadow_end_color">#03000000</color>
+    <color name="shadowView_default_shadow_start_color">#37000000</color>
+    <declare-styleable name="ShadowView">
+        <!-- Background color for ShadowView. -->
+        <attr name="contentBackgroundColor" format="color" />
+        <!-- Corner radius for ShadowView. -->
+        <attr name="contentCornerRadius" format="dimension" />
+        <!-- Elevation for ShadowView. -->
+        <attr name="contentElevation" format="dimension" />
+        <!-- Maximum Elevation for ShadowView. -->
+        <attr name="contentMaxElevation" format="dimension" />
+        <!-- Add padding in API v21+ as well to have the same measurements with previous versions. -->
+        <attr name="contentUseCompatPadding" format="boolean" />
+        <!-- Add padding to ShadowView on v20 and before to prevent intersections between the Content and rounded corners. -->
+        <attr name="contentPreventCornerOverlap" format="boolean" />
+        <!-- Inner padding between the edges of the Content and children of the ShadowView. -->
+        <attr name="contentPadding" format="dimension" />
+        <!-- Inner padding between the left edge of the Content and children of the ShadowView. -->
+        <attr name="contentPaddingLeft" format="dimension" />
+        <!-- Inner padding between the right edge of the Content and children of the ShadowView. -->
+        <attr name="contentPaddingRight" format="dimension" />
+        <!-- Inner padding between the top edge of the Content and children of the ShadowView. -->
+        <attr name="contentPaddingTop" format="dimension" />
+        <!-- Inner padding between the bottom edge of the Content and children of the ShadowView. -->
+        <attr name="contentPaddingBottom" format="dimension" />
+        <!-- Workaround to read user defined minimum width -->
+        <attr name="android:minWidth" />
+        <!-- Workaround to read user defined minimum height -->
+        <attr name="android:minHeight" />
+        <!-- the start color of shadow -->
+        <attr name="contentShadowColorStart" format="color" />
+        <!-- the end color of shadow -->
+        <attr name="contentShadowColorEnd" format="color" />
+    </declare-styleable>
+
+    <dimen name="shadowView_compat_inset_shadow">1dp</dimen>
+    <dimen name="shadowView_default_elevation">2dp</dimen>
+    <dimen name="shadowView_default_radius">2dp</dimen>
+
+    <style name="Base.ShadowView" parent="android:Widget">
+        <item name="contentCornerRadius">@dimen/shadowView_default_radius</item>
+        <item name="contentElevation">@dimen/shadowView_default_elevation</item>
+        <item name="contentMaxElevation">@dimen/shadowView_default_elevation</item>
+        <item name="contentUseCompatPadding">true</item>
+        <item name="contentPreventCornerOverlap">false</item>
+    </style>
+
+    <style name="ShadowView" parent="Base.ShadowView" />
+
+</resources>

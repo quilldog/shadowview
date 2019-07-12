@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    <!--=============注意事项========-->
+    <!--只有设置了contentBackgroundColor，contentShadowColorEnd/contentShadowColorStart才有点击切换效果-->
+    <!--contentPreventCornerOverlap 在低版本（小于21）会有阴影内边缘往里添加一个(1-cos45的)*radius的内边距，我们在源码和默认style已设置为了false-->
+    <!--contentUseCompatPadding = true表示该控件的大小（边界）有没有将阴影大小考虑在内-->
+    <!--=============注意事项========-->
+
+    <com.pierce.shadowview.ShadowView
+        android:id="@+id/sv1"
+        style="@style/style_common_pure_shadow"
+        app:contentBackgroundColor="@color/app_selector_card"
+        app:contentElevation="5dp"
+        app:contentShadowColorEnd="@color/app_selector_shadow_end"
+        app:contentShadowColorStart="@color/app_selector_shadow_start">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/custom_shadow"
+            android:textColor="@color/white" />
+
+    </com.pierce.shadowview.ShadowView>
+
+    <com.pierce.shadowview.ShadowView
+        android:id="@+id/sv2"
+        style="@style/style_common_pure_shadow"
+        app:contentBackgroundColor="@color/app_selector_card"
+        app:contentElevation="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/original_shadow"
+            android:textColor="@color/white" />
+
+    </com.pierce.shadowview.ShadowView>
+
+    <com.pierce.shadowview.ShadowView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:contentCornerRadius="10dp"
+        app:contentElevation="5dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_bg_1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/standard_shadow_view"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </com.pierce.shadowview.ShadowView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_bg_1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/standard_Card_view"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </android.support.v7.widget.CardView>
+
+    <com.pierce.shadowview.ShadowView
+        android:id="@+id/sv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:contentBackgroundColor="@color/app_selector_card"
+        app:contentCornerRadius="10dp"
+        app:contentElevation="5dp"
+        app:contentShadowColorEnd="@color/app_selector_shadow_end"
+        app:contentShadowColorStart="@color/app_selector_shadow_start"
+        app:contentUseCompatPadding="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_bg_1"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/clickable_shadow_view"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+    </com.pierce.shadowview.ShadowView>
+
+</LinearLayout>

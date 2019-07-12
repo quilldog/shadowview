@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ShadowDemo</string>
+    <string name="intent_filter">intent_filter</string>
+    <string name="standard_shadow_view">标准的ShadowView</string>
+    <string name="standard_Card_view">标准的CardView</string>
+    <string name="original_card_view">原生CardView</string>
+    <string name="clickable_shadow_view">可点击的ShadowView</string>
+    <string name="custom_shadow">自定义阴影的ShadowView</string>
+    <string name="original_shadow">原生的阴影，21及以上采用setElevation</string>
+    <string name="click_animator_shadow">点击动画</string>
+</resources>

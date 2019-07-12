@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ShadowView" parent="Base.ShadowView">
+        <item name="contentBackgroundColor">?android:attr/colorBackgroundFloating</item>
+    </style>
+</resources>
