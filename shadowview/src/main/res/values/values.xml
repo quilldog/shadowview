@@ -49,7 +49,7 @@
         <item name="contentElevation">@dimen/shadowView_default_elevation</item>
         <item name="contentMaxElevation">@dimen/shadowView_default_elevation</item>
         <item name="contentUseCompatPadding">true</item>
-        <item name="contentPreventCornerOverlap">true</item>
+        <item name="contentPreventCornerOverlap">false</item>
     </style>
 
     <style name="ShadowView" parent="Base.ShadowView" />

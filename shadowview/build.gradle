@@ -8,7 +8,7 @@ publish {
     repoName = 'shadowview'//bintray组织下边，仓库的名字
     groupId = 'com.pierce' //maven仓库下库的包名，一般为模块包名
     artifactId = 'shadowview' //与你在bintray建立的package的名字一样
-    publishVersion = '1.0.0' //版本号,与你在bintray建立的package版本一直
+    publishVersion = '1.0.2' //版本号,与你在bintray建立的package版本一直
     desc = '' //项目介绍，可以不写
     website = '' //项目主页，可以不写
     licences = ['Apache-2.0']
@@ -21,8 +21,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 1
-        versionName "1.0"
+        versionCode 3
+        versionName "1.0.2"
     }
 
     buildTypes {
