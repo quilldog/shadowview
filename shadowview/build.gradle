@@ -4,15 +4,18 @@ apply plugin: 'kotlin-android'
 apply plugin: 'com.novoda.bintray-release'
 
 publish {
-    userOrg = '3845396' //bintray账户下某个组织的name
-    repoName = 'shadowview'//bintray组织下边，仓库的名字
-    groupId = 'com.pierce' //maven仓库下库的包名，一般为模块包名
-    artifactId = 'shadowview' //与你在bintray建立的package的名字一样
-    publishVersion = '1.0.2' //版本号,与你在bintray建立的package版本一直
-    desc = '' //项目介绍，可以不写
-    website = '' //项目主页，可以不写
-    licences = ['Apache-2.0']
-    //依赖 compile 'com.pierce:shadowview:1.0.0'      com.pierce就是groupId；shadowview就是artifactId；
+    userOrg = '3845396' //你bintray建立的组织的id
+    repoName = 'shadowview'//你bintray建立的repo的name
+    artifactId = 'shadowview' //你bintray建立的package的name
+    licences = ['Apache-2.0']//你bintray建立的package的license
+    groupId = 'com.pierce' //自定义
+    publishVersion = '1.0.2' //自定义
+    desc = '' //项目介绍，可以不填
+    website = '' //项目主页，可以不填
+
+    //依赖 implementation 'com.pierce:shadowview:1.0.0'中
+    // com.pierce就是groupId；
+    // shadowview就是artifactId；
 }
 
 android {
