@@ -9,7 +9,7 @@ publish {
     artifactId = 'shadowview' //你bintray建立的package的name
     licences = ['Apache-2.0']//你bintray建立的package的license
     groupId = 'com.pierce' //自定义
-    publishVersion = '1.0.2' //自定义
+    publishVersion = '1.0.3' //自定义
     desc = '' //项目介绍，可以不填
     website = '' //项目主页，可以不填
 
@@ -24,8 +24,8 @@ android {
     defaultConfig {
         minSdkVersion 19
         targetSdkVersion 28
-        versionCode 3
-        versionName "1.0.2"
+        versionCode 4
+        versionName "1.0.3"
     }
 
     buildTypes {
