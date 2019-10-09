@@ -19,5 +19,7 @@ class MainActivity : AppCompatActivity() {
     private fun onClick(it: View) {
         //testdsdddddsfasdf
         it.isSelected = !it.isSelected
+
+        //啥的看法是肯定发生的看法
     }
 }
