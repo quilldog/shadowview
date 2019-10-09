@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onClick(it: View) {
+        //test
         it.isSelected = !it.isSelected
     }
 }
