@@ -18,5 +18,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun onClick(it: View) {
         it.isSelected = !it.isSelected
+        //no need push
     }
 }
